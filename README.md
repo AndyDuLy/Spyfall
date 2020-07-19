@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Spyfall
 
-## Available Scripts
+Real-time Web App hosted version of the popular card game, Spyfall. Play with 3+ friends at: https://rt-spyfall.web.app/ <br/>
+Looking to create and run some quick games with minimal hassle and setup? <br/>
+This web app is perfect for you with no account registration required!
 
-In the project directory, you can run:
 
-### `npm start`
+## Demo & How-to Use
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After visiting the URL, you are greeted by the landing page, which offers quick access to either create or join a game room/lobby. <br/>
+<img src="/RepoImages/LandingPage.png">
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+You are then redirected to the game room/lobby, where anyone can start or close the game and the current player lobby is updated in real time. <br/>
+<img src="/RepoImages/GameLobby.png">
 
-### `npm test`
+Once the game is started, a player is randomly assigned the role of 'Spy', with the non-spy players knowing the location! <br/>
+Possible location set is also visible to all players. Once this round is over, simply end the game and start it again! <br/>
+<img src="/RepoImages/InGame.png">
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Inspiration & Purpose
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Despite all of us going separate ways for post-secondary education, we always got together when we were on break from school, and Spyfall was a game we commonly played. <br/>
+We started off using the first mobile app we found on the app store, but found it super buggy, slow, and required us to make accounts when we just wanted to quickly setup and run a few games. <br/>
+We joked about me just making my own interpretation of the game to fit our needs, but when I realized it could be done relatively easily with Firebase Realtime, I said "Why not?"
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technical Stack
 
-### `npm run eject`
+If you've made it this far, surely you're interested in knowing a bit more about the underlying tools and technologies I used! <br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Front-end was vanilla React, no framework or ui library thrown on top. <br/>
+Mostly because it's what I'm most proficient with and I initially created this about a month out from when my friends and I were going to get together again and need the app. Just threw in some CSS to make it look a bit more appealing off a quick mockup I had developed and sitting in Figma for some time. <br/>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Back-end was all Google Cloud Platform. <br/>
+Specifically Firebase's Realtime Database, and hosted through GCP's Cloud Hosting as the integration of everything was seamless. <br/>
+I went with Realtime DB over Sockets mostly because of my interest in GCP and their suite of products.
