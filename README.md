@@ -1,6 +1,10 @@
 ## Spyfall
 
-Real-time Web App hosted version of the popular card game, Spyfall. Play with 3+ friends at: https://rt-spyfall.web.app/ <br/>
+Real-time Web App hosted version of the popular card game, Spyfall. <br/>
+Play with 3+ friends at: https://rt-spyfall.web.app/ <br/>
+
+<br/> 
+
 Looking to create and run some quick games with minimal hassle and setup? <br/>
 This web app is perfect for you with no account registration required!
 
